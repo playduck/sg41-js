@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG-41</title>
+    <script defer src="./sg41.js"></script>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <h1>SG-41</h1>
+
+    <section>
+        <h4>Eingabe</h4>
+        <div class="text-input">
+            <label for="decrypted">Klartext</label>
+            <input type="text" name="decrypted" id="decrypted">
+        </div>
+        <div class="text-input">
+            <label for="encrypted">Geheimtext</label>
+            <input type="text" name="encrypted" id="encrypted">
+        </div>
+        <div>
+            <input type="button" id="decrypt" value="Entschlüsseln">
+            <input type="button" id="encrypt" value="Verschlüsseln">
+        </div>
+    </section>
+
+    <section>
+        <h4>Walzen</h4>
+
+        <div id="wheels">
+        </div>
+
+        <div>
+            <span style="color: rgb(220, 106, 106);" >Rot</span>: Startposition<br>
+            Pinstellung: <code>0</code> = links, <code>1</code> = rechts
+        </div>
+    </section>
+
+    <section>
+        <h4>Literatur</h4>
+        <ul>
+            <li>
+                Kopacz, K., & Reuvers, P. (2021). Schlüsselgerät 41: Full technical details of the German wartime SG-41 cipher machine. Crypto Museum, Eindhoven (Niederlande).<br>
+                <a target="_blank" noopener noreferer href="https://www.cryptomuseum.com/pub/files/CM_SG41.pdf">https://www.cryptomuseum.com/pub/files/CM_SG41.pdf</a>
+            </li>
+            <li>
+                Hugh Coleman (2021). SG-41 Simulator in Python.<br>
+                <a target="_blank" noopener noreferer href="https://github.com/hughcoleman/sg41">https://github.com/hughcoleman/sg41</a>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer>
+    Robin Prillwitz 2022
+</footer>
+
+</body>
+
+</html>
